@@ -1,9 +1,10 @@
-from math import log1p, sin, pi
+from math import e, sin, cos, pi
 
 a = float(input('Введите a: '))
 b = float(input('Введите b: '))
 c = float(input('Введите c: '))
 
-t = ((log1p(abs(a ** 2 - b ** a - c))) / sin(a) + (16.9 ** 3 / pi))
+t = ((a ** (-1) + b ** (-2) + c ** (-3)) / (pi * abs(a * b)))
++ ((e ** c + cos(b)) / (cos(c)))
 
 print(f'Результат: {t}')
