@@ -1,4 +1,4 @@
-from math import sqrt, e, sin, log1p
+from math import cos, pi, e
 
 '''
 1. Импортируем нужные нам функции из библиотеки math
@@ -11,11 +11,10 @@ from math import sqrt, e, sin, log1p
    f'Какой-то текст {переменная} какой-то текст'
 '''
 
-x = float(input('Введите x: '))  
+x = float(input('Введите x: '))
 y = float(input('Введите y: '))
-z = float(input('Введите z: '))
 
-S = sqrt(x ** y + y ** z + z ** x + ((e ** x + log1p(abs(sin(y))))
-                                      / (z ** 4 * 0.87)))
+A = ((abs(cos(x) ** 3)) / (3 * pi ** 2))
++ ((e ** x * y + abs(x - y)) / (y ** 4))
 
-print(f'Результат: {S}')
+print(f'Результат: {A}')
